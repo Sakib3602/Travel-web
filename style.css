@@ -448,6 +448,9 @@ background-color: rgba(19, 19, 24, 0.05);;
   .left {
     width: 100%;
   }
+  .left1{
+    width: 100%;
+  }
   .in input {
     width: 100%;
   }
@@ -478,6 +481,9 @@ background-color: rgba(19, 19, 24, 0.05);;
     color: #fff;
     font-size: 10px;
     font-weight: 400;
+  }
+  .booxx{
+    width: 80%;
   }
   /* end */
 }
