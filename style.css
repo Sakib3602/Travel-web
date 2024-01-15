@@ -16,6 +16,10 @@ header {
   width: 1440px;
   margin: 52px auto;
 }
+main {
+    width: 1440px;
+    margin: 52px auto;
+  }
 /* navbar */
 nav {
   display: flex;
@@ -101,18 +105,94 @@ nav a {
   align-items: center;
 }
 
-.fom input, select, button{
-    width: 160px;
-    height: 44px;
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
+.fom input,
+select,
+button {
+  width: 160px;
+  height: 44px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+.fom button {
+  color: #fff;
+  background-color: #ff5400;
+}
+/* end header main */
+
+.popular{
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+   
+    width: 50%;
 
 }
-.fom button{
-    color: #fff;
-    background-color: #FF5400;
+.text button{
+    width: 174px;
+height: 52px;
+background-color: #ff5400;
+color: white;
+font-weight: 400;
+font-size: 18px;
+border: none;
+border-radius: 5px;
+margin-top: 35px;
 }
+.text h1{
+    color: #131318;
+font-size: 40px;
+font-weight: 800;
+
+}
+.wi li{
+    margin-left: 30px;
+}
+.wi{
+    width: 700px;
+    margin-top: 30px;
+}
+.commonn{
+    color: #5A5A5D;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+}
+.popular .pic img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* media start */
 @media screen and (max-width: 576px) {
@@ -127,37 +207,54 @@ nav a {
     display: block;
     font-size: 30px;
   }
-  .header-main{
+  .header-main {
     margin: 0;
     width: 100%;
-    
-    
   }
-  .header-main h1{
+  .header-main h1 {
     font-size: 35px;
   }
-  .header-main::after{
+  .header-main::after {
     width: 100%;
-   
-  
   }
-  .textbox{
+  .textbox {
     width: 90%;
     padding-top: 30px;
-}
-.header-main .fom{
+  }
+  .header-main .fom {
     width: 90%;
     height: 55%;
     padding: 10px;
     flex-direction: column;
     margin-top: 30px;
-}
-.fom input, select, button{
+  }
+  .fom input,
+  select,
+  button {
     margin-top: 20px;
     width: 80%;
+  }
+  /* header end */
+  .popular{
+    flex-direction: column;
+  }
+  .kk{
+    display: none;
+  }
+  .wi{
+    width: 385px;
+  }
+  .pic{
+    margin-top: 30px;
+    width: 100%;
+  }
+  main {
+    width: 90%;
+    margin: 15px auto;
+  }
+  .text h1{
+    font-size: 20px;
+  }
+
+  /* end */
 }
-
-
-/* end */
-}
-
