@@ -361,6 +361,20 @@ margin-top: 10px;
   }
   /* end popular part */
 
-
+  .card{
+    flex-direction: column;
+  }
+  .card1, .card2, .card3{
+    width: 100%;
+  }
+.text-us{
+    width: 100%;
+}
+.card2{
+    margin-bottom: 44px;
+}
+.card3{
+    margin: 0 auto;
+}
   /* end */
 }
