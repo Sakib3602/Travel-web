@@ -408,9 +408,42 @@ margin-top: 35px;
 border: none;
 border-radius: 8px;
 }
+/* 
+ */
+ .ar{
+  width: 660px;
+  margin: 60px auto;
+  text-align: center;
+ }
+.ar-card{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
 
-
-
+ .one{
+  width: 400px;
+  padding: 20px;
+  border: 2px solid salmon;
+  border-radius: 10px;
+ }
+ .one button{
+  width: 100%;
+  margin-top: 15px;
+  background-color: #ff5400;
+  color: white;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+ }
+ .one h1{
+  margin-top: 22px;
+ }
+ .one img{
+  width: 100%;
+  border-radius: 10px;
+ }
 
 
 
@@ -427,6 +460,17 @@ border-radius: 8px;
 
 /* media start */
 @media screen and (max-width: 576px) {
+  .ar-card{
+    flex-direction: column;
+  }
+  .ar{
+    width: 100%;
+  }
+  .one{
+    width: 100%;
+    margin-top: 20px;
+  }
+  
   .main-imgs{
     margin-top: 10px;
    display: grid;
