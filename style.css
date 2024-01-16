@@ -166,6 +166,7 @@ button {
 #box1{
     grid-area: b1;
     
+    
 }
 #box2{
     grid-area: b2;
@@ -186,14 +187,26 @@ button {
 #box7{
     grid-area: b7;
 } 
+.main-imgs .box {
+  position: relative;
+}
 .box img{
   width: 100%;
   max-height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
+.main-imgs h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
 
 .main-imgs{
+  position: relative;
   margin-top: 50px;
  display: grid;
   grid-template-areas: 
@@ -204,6 +217,11 @@ button {
   ;
   grid-gap: 20px;
 
+}
+.topp{
+  width: 580px;
+  margin: 90px auto;
+  text-align: center;
 }
 
 
@@ -428,7 +446,10 @@ border-radius: 8px;
   .box img{
     width: 95%;
   }
-  
+  .topp{
+    width: 95%;
+    margin: 30px auto;
+  }
   
   .simple{
     flex-direction: column;
