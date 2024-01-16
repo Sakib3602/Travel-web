@@ -48,6 +48,7 @@ nav li {
 nav a {
   text-decoration: none;
 }
+
 /* navbar  end*/
 
 /* header main */
@@ -72,7 +73,7 @@ nav a {
   z-index: 1;
   border-radius: 10px;
 }
-.header-main h1 {
+.header-main h1{
   color: white;
   font-size: 64px;
   font-weight: 800;
@@ -162,13 +163,13 @@ button {
 }
 
 /* start img grid */
-/* #box1{
-    grid-column: 1 / 6;
-    grid-row: 1/1;
+#box1{
+    grid-column: b1;
+    
 }
 #box2{
-    grid-area: 7 / 13;
-    grid-row: 1/1;
+    grid-area: b2;
+   
 }
 #box3{
     grid-area: b3;
@@ -184,7 +185,20 @@ button {
 }
 #box7{
     grid-area: b7;
-}  */
+} 
+
+.main-imgs{
+
+  grid-template-areas: 
+  
+  "b1 b1 b1 b2 b2 b2"
+  "b3 b3 b4 b4 b4 b5" 
+  "b6 b6 b7 b7 b7 b7" 
+  
+  
+  ;
+}
+
 
 /* us section */
 
@@ -249,6 +263,7 @@ button {
 
 /* newsletter */
 .newsletter {
+  margin-top: 100px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -337,11 +352,37 @@ button {
 height: 502px;
 background-color: rgba(19, 19, 24, 0.05);;
 }
+/* simple start */
+.simple{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+height: 424px;
+}
 
+.simple-l{
 
+  width: 625px;
+  padding: 40px;
+}
+.simple-l p{
+  margin-top: 35px;
+}
+.simple-l ul{
+  margin-top: 28px;
+}
 
-
-
+.simple-l button{
+  width: 174px;
+height: 52px;
+background-color: #ff5400;
+color: white;
+font-size: 16px;
+font-weight: 400;
+margin-top: 35px;
+border: none;
+border-radius: 8px;
+}
 
 
 
@@ -361,6 +402,20 @@ background-color: rgba(19, 19, 24, 0.05);;
 
 /* media start */
 @media screen and (max-width: 576px) {
+  .simple{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 280px;
+  }
+  iframe{
+    width: 95%;
+    margin-top: 20px;
+  }
+  .simple-l {
+    width: 95%;
+    padding: 0px;
+}
+  
   header {
     width: 90%;
     margin: 15px auto;
@@ -443,7 +498,7 @@ background-color: rgba(19, 19, 24, 0.05);;
   /* newsletter */
   .newsletter {
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 220px;
   }
   .left {
     width: 100%;
@@ -469,7 +524,7 @@ background-color: rgba(19, 19, 24, 0.05);;
     width: 170px;
     height: 70px;
     right: 8%;
-    top: 32%;
+    top: 50%;
   }
 
   .lol h4 {
@@ -485,5 +540,9 @@ background-color: rgba(19, 19, 24, 0.05);;
   .booxx{
     width: 80%;
   }
+  nav li {
+    list-style: none;
+    margin-right: 0px;
+}
   /* end */
 }
